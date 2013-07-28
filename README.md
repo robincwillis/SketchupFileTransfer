@@ -15,6 +15,7 @@ Features
 Setup
 -----
 ```
+> cd ConMgr
 > make clean
 > ruby extconf.rb
 > make
