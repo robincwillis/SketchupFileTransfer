@@ -1,6 +1,6 @@
 require 'mkmf'
 
-PLATFORM_IS_OSX     = (Object::RUBY_PLATFORM =~ /darwin/i) ? true : false
+PLATFORM_IS_OSX = (Object::RUBY_PLATFORM =~ /darwin/i) ? true : false
 
 # Name the extension.
 extension_name = 'ConnectionManager'
@@ -12,12 +12,6 @@ if PLATFORM_IS_OSX
 
 else
 	dir_config("curl")
-	#--enable-static
-	
-#	if ARGV.include?('--enable-static')
-#		$libs.gsub!('-lcurl', '-Wl,-static -lcurl -Wl,-shared')
-#		$defs.push('-CURL_DECLARE_STATIC')
-#	end
 	
 	# Create the header file.
 	create_header('ConnectionManager.h')

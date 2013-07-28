@@ -1,3 +1,0 @@
-#ifndef CONNECTIONMANAGER_H
-#define CONNECTIONMANAGER_H
-#endif
