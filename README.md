@@ -1,7 +1,7 @@
 SketchupFileTransfer
 ====================
 
-Utility that allows Sketchup plugins to upload and download files through http requests
+Utility that allows Sketchup plugins to upload and download files through http requests using cURL
 
 
 Features
@@ -14,7 +14,11 @@ Features
 
 Setup
 -----
-
+```
+> make clean
+> ruby extconf.rb
+> make
+```
 
 How To Use
 -----
